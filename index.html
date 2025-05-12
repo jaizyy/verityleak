@@ -2,33 +2,33 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Galerie protégée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie avec redirection</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" id="login-section">
-    <h1>Accès réservé</h1>
-    <form id="login-form">
-      <input type="email" id="email" placeholder="Adresse e-mail" required>
-      <label>
-        <input type="checkbox" id="age-check" required>
-        J’ai plus de 18 ans
-      </label>
-      <button type="submit">Accéder au site</button>
-    </form>
-  </div>
+  <header>
+    <h1>Ma galerie de photos et vidéos</h1>
+  </header>
 
-  <div class="gallery hidden" id="gallery-section">
-    <h2>Galerie privée</h2>
-    <div class="grid">
-      <img src="https://via.placeholder.com/300x200" alt="Image 1" class="blurred">
-      <img src="https://via.placeholder.com/300x200" alt="Image 2" class="blurred">
-      <video class="blurred" controls muted>
+  <div class="gallery">
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 1" data-link="https://exemple1.com">
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 2" data-link="https://exemple2.com">
+    </div>
+    <div class="item">
+      <video controls muted data-link="https://exemple3.com">
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
     </div>
   </div>
+
+  <footer>
+    <p>&copy; 2025 Ma galerie</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
