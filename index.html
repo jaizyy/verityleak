@@ -3,32 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galerie avec redirection</title>
+  <title>Connexion et Vérification d'Âge</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Ma galerie de photos et vidéos</h1>
-  </header>
+  <div class="main-container">
+    <div class="login-form-container">
+      <h1>Bienvenue sur notre site !</h1>
+      <p>Veuillez vous connecter et vérifier votre âge pour accéder au contenu.</p>
 
-  <div class="gallery">
-    <div class="item">
-      <img src="https://via.placeholder.com/300x200" alt="Image 1" data-link="https://exemple1.com">
-    </div>
-    <div class="item">
-      <img src="https://via.placeholder.com/300x200" alt="Image 2" data-link="https://exemple2.com">
-    </div>
-    <div class="item">
-      <video controls muted data-link="https://exemple3.com">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la vidéo.
-      </video>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Votre adresse e-mail" required>
+        <div class="age-verification">
+          <label for="age-check">Avez-vous plus de 18 ans ?</label>
+          <input type="checkbox" id="age-check">
+        </div>
+        <button type="submit">Se connecter</button>
+      </form>
+
+      <p class="error-message" id="error-message"></p>
     </div>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Ma galerie</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
