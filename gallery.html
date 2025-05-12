@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="index.html">Déconnexion</a>
+      <a href="welcome.html">Accueil</a>
+    </div>
+  </header>
+
+  <div class="gallery-container">
+    <h1>Ma Galerie Époustouflante</h1>
+    <div class="tabs">
+      <button class="tab-button" onclick="openTab('photos')">Photos</button>
+      <button class="tab-button" onclick="openTab('videos')">Vidéos</button>
+    </div>
+
+    <div class="tab-content">
+      <div id="photos" class="tab-content-section">
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200" alt="Image 2">
+        </div>
+      </div>
+      <div id="videos" class="tab-content-section">
+        <div class="gallery-item">
+          <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Galerie Époustouflante</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
