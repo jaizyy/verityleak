@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie protégée</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="login-section">
+    <h1>Accès réservé</h1>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Adresse e-mail" required>
+      <label>
+        <input type="checkbox" id="age-check" required>
+        J’ai plus de 18 ans
+      </label>
+      <button type="submit">Accéder au site</button>
+    </form>
+  </div>
+
+  <div class="gallery hidden" id="gallery-section">
+    <h2>Galerie privée</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300x200" alt="Image 1" class="blurred">
+      <img src="https://via.placeholder.com/300x200" alt="Image 2" class="blurred">
+      <video class="blurred" controls muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
